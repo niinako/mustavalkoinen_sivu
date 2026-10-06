@@ -425,6 +425,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  appearance: button;
   -webkit-appearance: button;
 }
 button:not(:disabled),
@@ -483,6 +484,7 @@ legend + * {
 
 [type="search"] {
   outline-offset: -2px;
+  appearance: button;
   -webkit-appearance: textfield;
 }
 
@@ -504,6 +506,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -642,6 +645,12 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+/* kuva täyttää kortin yläosan siististi riippumatta kuvan mittasuhteista */
+.card-img-top {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .img-thumbnail {
